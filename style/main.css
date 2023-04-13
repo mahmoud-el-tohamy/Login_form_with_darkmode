@@ -1,0 +1,263 @@
+
+/* Mahmoud Eslam Mahmoud ElTohamy */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Light mode */
+body {
+    background-color: #f0f0f0;
+    color: #1b53b0;
+}
+
+header{
+    background-color: #bdd7ee;
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+h1{
+    margin-left: 20px ;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    color: #1b53b0;
+    display: flex;
+    margin-left: 20px;
+}
+
+li{
+    display: flex;
+    margin: 10px;
+    height:30px;
+    display: flex;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+}
+
+a{
+    color: #1b53b0;
+}
+
+li a:hover,
+li:hover{
+    background-color:#1b53b0;
+    color: white;
+}
+
+section{
+    width: 30%;
+    height: 300px;
+    margin: 150px auto;
+    background-color: #bdd7ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1b53b0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    font-size: small;
+}
+
+.txt{
+    background-color: #e0e9f6;
+    border: 1px solid #1b53b0;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+label{
+    width: 200px;
+    font-family: monospace;
+}
+
+form label input a{
+    font-family: monospace;
+}
+
+.sub{
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #e0e9f6;
+    color: #1b53b0;
+    border: 1px solid #1b53b0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+::placeholder{
+    color: #1b53b0;
+    opacity: 50%;
+    text-align: center;
+}
+
+.txt:focus{
+    outline: none;
+    border: 1px solid rgb(223, 34, 34)
+}
+
+footer{
+    background-color: #1b53b0;
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+}
+
+header.dark-mode {
+    background-color: #3a3a3a;
+}
+
+ul.dark-mode li a {
+    color: #f0f0f0;
+}
+
+ul.dark-mode li a:hover,
+li.dark-mode:hover{
+    background-color:#f0f0f0;
+    color: #1b53b0;
+}
+
+section.dark-mode {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+}
+
+form.dark-mode label {
+    color: #f0f0f0;
+}
+
+.sub.dark-mode {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+}
+
+.dark-mode .toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #1b53b0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-mode .toggle-btn:hover {
+    background-color: #1b53b0;
+    color: #fff;
+}
+
+.dark-mode .toggle-btn:focus {
+    outline: none;
+}
+
+.dark-mode .toggle-icon {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.dark-mode .toggle-text {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #1b53b0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:hover {
+    background-color: #1b53b0;
+    color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+.toggle-icon {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.toggle-text {
+    display: inline-block;
+    font-size: 14px;
+}        
+
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode input[type="password"] {
+    background-color: #2e2e2e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode input[type="email"]:focus,
+.dark-mode input[type="password"]:focus {
+    outline: none;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
